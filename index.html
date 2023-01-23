@@ -1,0 +1,708 @@
+<html>
+    <head>
+        <title>CSS-TAGS</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+      
+      <section class="Introduction" id="Introduction">
+        <div id="saff2">
+         <h1>CSS Introduction</h1>
+         <h4 class="saff1">What is CSS?</h4>
+         <p>.CSS Standa for Cascading Style Sheets<br>.CSS describes how HTML elements are to be displayed on screen,paper,or in other media<br>
+         .CSS saves a lot of work. It can control the layout of multiple web pages all at once<br>.External stylesheets are stored in css files</p>
+         <h4 class="saff1">Why use CSS?</h4>
+         <p>CSS is used to define styles for your web pages,<br>including the design, layout and variation in display<br>for different devices and screen sizes.</p>
+         <h4 class="saff1">CSS Solved a Big Problem</h4>
+         <p>HTML was  NEVER intended to contain tags for formatting a web page!</p>
+         <p>HTML was created to describe the content of a web page,like:</p>
+         <p>&lt;h1&gt;This is a heading&lt;/h1&gt;</p>
+         <p>&lt;p&gt;This is a paragraph&lt;/p&gt;</p>
+         <h4 class="saff1">CSS Saves a Lot of Work</h4>
+         <p>The style definitors are normally saves in external.css files.</p>
+         <p>With an external stylesheet file, you can change the look of an entire website by changng just one file!</p>
+      </div>
+      <section class="Syntax" id="Syntax"></section>
+      <div id="saff2">
+        <h1>CSS Syntax</h1>
+        <p>The selector points to the HTML element you want to style.</p>
+        <p>The declaration block contains one or more declarations seperated by semicolons.<br>Each declaration includes a CSS property name and a value,separated by a colon.</p>
+        <p>Multiple CSS declarations are seperated with semicolons, and declaration blocks are surrounded by curly braces.</p>
+        <h4 class="saff1">Example Explained</h4>
+        <p>.<span class="saf">p</span> is a selector in CSS(it points to the HTML element you want to style:&lt;p&gt;)<br>
+        .<span class="saf">color</span> is a property and <span class="saf">red</span> is the property value<br>.<span class="saf">text-align</span>
+        is a property and <span class="saf">center</span> is the property value</p>
+      </div>
+      <section class="Selectors" id="Selectors"></section>
+      <div id="saff2">
+        <h1>CSS Selectors</h1>
+        <p>CSS Selectors are used to "find" (or select) the HTML elements you want to style.<br> We can divide CSS selectors into five categories:</p>
+        <p>.Simple selectors (select elements based on name, id, class)<br>
+          .Combinator selectors (select elements based on a specific relationship between them)<br>
+          .Pseudo-class selectors (select elements based on a certain state)<br>
+          .Pseudo-elements selectors (select and style a part of an element)<br>
+          .Attribute selectors (select elements based on an attribute or attribute value)<br>
+          .This page will explain the most basic CSS selectors.<br>
+        </p>
+        <h4 class="saff1">The CSS element selector</h4>
+        <p>The element selector selects HTML elements based on the element name.<br>Here, all <p> elements on the page will be center-aligned, with a red text color: </p>
+        <p><span class="saf1">p {<br> text-align: center;<br>color:red;<br>}</span></p>
+        <h4 class="saff1">The CSS id selector</h4>
+        <p>The id selector uses the id attribute of an HTML element to select a specific element.<br>The id of an element is unique within a page, so the id selector is used to select one unique element!
+        <br>To select an element with a specific id, write a hash (#) character, followed by the id of the element.<br>The CSS rule below will be applied to the HTML element with id="para1": </p>
+        <p><span class="saf1">#para1 {<br>text-align: center;<br> color: red;<br>}</span></p>
+        <h4 class="saff1">The CSS class Selector</h4>
+        <p>The class selector selects HTML elements with a specific class attribute.<br>To select elements with a specific class, write a period (.) character, followed by the class name.<br>In this example all HTML elements with class="center" will be red and center-aligned: </p>
+        <p><span class="saf1">.center {<br>text-align: center;<br>color: red;<br>}<br></span></p>
+        <h4 class="saff1">The CSS Universal Selector</h4>
+        <p>The universal selector (*) selects all HTML elements on the page.<br>The CSS rule below will affect every HTML element on the page:</p>
+        <p><span class="saf1">* {<br>text-align: center;<br>color: blue;<br>}</span></p>
+        <h4 class="saff1">The CSS Grouping Selector</h4>
+        <p>The grouping selector selects all the HTML elements with the same style definitions.<br>Look at the following CSS code (the h1, h2, and p elements have the same style definitions):</p>
+        <p><span class="saf1">h1 {<br>text-align: center;<br>color: red;<br>}<br><br>h2 {<br>text-align: center;<br>color: red;<br>}<br><br>p {<br>text-align: center;<br>color: red;<br>}</span></p>
+      </div>
+      <section class="colors" id="colors"></section>
+      <div id="saff2">
+        <h1 class="saff">CSS Colors</h1>
+        <p>Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.<br>In CSS, a color can be specified by using a predefined color name:</p>
+        <p><span class="saf1"><h1 style="background-color:DodgerBlue;">Hello World</h1>
+          <p style="background-color:Tomato;">Lorem ipsum...</p></span></p>
+          <h4 class="saff1">CSS Text Color</h4>
+          <p>You can set the color of text:</p>
+          <p><h1 style="color:Tomato;">Hello World</h1>
+            <p style="color:DodgerBlue;">Lorem ipsum...</p>
+            <p style="color:MediumSeaGreen;">Ut wisi enim...</p></p>
+            <h4 class="saff1">CSS Border Color</h4>
+            <p>You can set the color of borders:</p>
+            <p><h1 style="border:2px solid Tomato;">Hello World</h1>
+              <h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+              <h1 style="border:2px solid Violet;">Hello World</h1></p>
+              <h4 class="saff1">CSS Color Values</h4>
+              <p>In CSS, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values:<br>Same as color name "Tomato":</p>
+              <p>Same as color name "Tomato":</p>
+
+<h1 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</h1>
+<h1 style="background-color:#ff6347;">#ff6347</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h1>
+
+<p>Same as color name "Tomato", but 50% transparent:</p>
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
+      </div>
+      <section class="backgrounds" id="backgrounds">
+        <div id="saff2">
+          <h1>CSS Backgrounds</h1>
+          <p>The CSS background properties are used to add background effects for elements.</p>
+          <p>In these chapters, you will learn about the following CSS background properties:</p>
+            background-color<br>
+            background-image<br>
+            background-repeat<br>
+            background-attachment<br>
+            background-position<br>
+            background (shorthand property)<br>
+          <h4 class="saff1">CSS background-color</h4>
+          <p>The <span class="saf">background-color</span> property specifies the background color of an element.<br>The background color of a page is set like this:</p>
+          <p>body {
+            background-color: lightblue;
+          }</p>
+          <p>With CSS, a color is most often specified by:</p>
+            a valid color name - like "red"<br>
+            a HEX value - like "#ff0000"<br>
+            an RGB value - like "rgb(255,0,0)"<br>
+        </div>
+      </section>
+      <section class="borders" id="borders">
+        <div id="saff2">
+          <h1>CSS Borders</h1>
+          <p>The CSS border properties allow you to specify the style, width, and color of an element's border.</p>
+          <h4 class="saff1">CSS Border Style</h4>
+          <p>The <span class="saf">border-style</span> property specifies what kind of border to display.<br>The following values are allowed:</p>
+            <span class="saf">dotted</span>- Defines a dotted border<br>
+            <span class="saf">dashed</span>- Defines a dashed border<br>
+            <span class="saf">solid</span> - Defines a solid border<br>
+            <span class="saf">double</span> - Defines a double border<br>
+            <span class="saf">groove</span>- Defines a 3D grooved border. The effect depends on the border-color value<br>
+            <span class="saf">ridge</span>- Defines a 3D ridged border. The effect depends on the border-color value<br>
+            <span class="saf">inset</span>- Defines a 3D inset border. The effect depends on the border-color value<br>
+            <span class="saf">outset</span>- Defines a 3D outset border. The effect depends on the border-color value<br>
+            <span class="saf">none</span>- Defines no border<br>
+            <span class="saf">hidden</span>- Defines a hidden border<br>
+          <p>The <span class="saf">border-style</span>  property can have from one to four values (for the top border, right border, bottom border, and the left border).</p>
+          <style>
+            p.dotted {border-style: dotted;}
+            p.dashed {border-style: dashed;}
+            p.solid {border-style: solid;}
+            p.double {border-style: double;}
+            p.groove {border-style: groove;}
+            p.ridge {border-style: ridge;}
+            p.inset {border-style: inset;}
+            p.outset {border-style: outset;}
+            p.none {border-style: none;}
+            p.hidden {border-style: hidden;}
+            p.mix {border-style: dotted dashed solid double;}
+            </style>
+            </head>
+            <body>
+            
+            <h2>The border-style Property</h2>
+            <p>This property specifies what kind of border to display:</p>
+            
+            <p class="dotted">A dotted border.</p>
+            <p class="dashed">A dashed border.</p>
+            <p class="solid">A solid border.</p>
+            <p class="double">A double border.</p>
+            <p class="groove">A groove border.</p>
+            <p class="ridge">A ridge border.</p>
+            <p class="inset">An inset border.</p>
+            <p class="outset">An outset border.</p>
+            <p class="none">No border.</p>
+            <p class="hidden">A hidden border.</p>
+            <p class="mix">A mixed border.</p>
+            
+            </body>
+        </div>
+      </section>
+      <selection class="margins" id="margins">
+        <div class="saff2">
+          <h1>CSS Margins</h1>
+          <p>Margins are used to create space around elements, outside of any defined borders.</p>
+          <style>
+            div {
+              border: 1px solid black;
+              margin-top: 100px;
+              margin-bottom: 100px;
+              margin-right: 150px;
+              margin-left: 80px;
+              background-color: lightblue;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h2>Using individual margin properties</h2>
+            
+            <div>This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px.</div>
+            
+            </body>
+        </div>
+      </selection>
+      <seletion class="padding" id="padding">
+        <div class="saff2">
+          <h1>CSS Padding</h1>
+          <p>Padding is used to create space around an element's content, inside of any defined borders.</p>
+          <p>The <span class="saf">CSS padding properties</span> are used to generate space around an element's content, inside of any defined borders.</p>
+          <p>With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).</p>
+          <html>
+<head>
+<style>
+div {
+  border: 1px solid black;
+  background-color: lightblue;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+</style>
+</head>
+<body>
+
+<h2>Using individual padding properties</h2>
+
+<div>This div element has a top padding of 50px, a right padding of 30px, a bottom padding of 50px, and a left padding of 80px.</div>
+
+</body>
+</html>
+        </div>
+      </seletion>
+      <section class="height" id="height">
+        <div class="saff2">
+          <h1>CSS Height, Width and Max-width</h1>
+          <p>The CSS <span class="saf">height and width</span> properties are used to set the height and width of an element.</p>
+          <p>The CSS <span class="saf">max-width</span> property is used to set the maximum width of an element.</p>
+          <p>{<br>
+            height: 200px;<br>
+            width: 50%;<br>
+            background-color: powderblue;<br>
+          }</p>
+          <p>div {<br>
+            max-width: 500px;<br>
+            height: 100px;<br>
+            background-color: powderblue;<br>
+          }</p>
+        </div>
+      </section>
+      <section class="box" id="box">
+        <div class="saff2">
+          <h1>CSS Box Model</h1>
+          <p>In CSS, the term "box model" is used when talking about design and layout.</p>
+          <p>The CSS box model is essentially a box that wraps around every HTML element.<br> It consists of: margins, borders, padding, and the actual content.<br> The image below illustrates the box model:</p>
+          <p>Explanation of the different parts:<br>
+            Content - The content of the box, where text and images appear<br>
+            Padding - Clears an area around the content. The padding is transparent<br>
+            Border - A border that goes around the padding and content<br>
+            Margin - Clears an area outside the border. The margin is transparent</p>
+            <p><html>
+              <head>
+              <style>
+              .saff3 {
+                background-color: lightgrey;
+                width: 300px;
+                border: 15px solid green;
+                padding: 50px;
+                margin: 20px;
+              }
+              </style>
+              </head>
+              <body>
+              
+              <h2>Demonstrating the Box Model</h2>
+              
+              <p>The CSS box model is essentially a box that wraps around every HTML element. It consists of: borders, padding, margins, and the actual content.</p>
+              
+              <div class="saff3">This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+              
+              </body>
+              </html></p>
+        </div>
+      </section>
+      <section class="outline" id="outline">
+        <div class="saff2">
+          <h1>CSS Outline</h1>
+          <p>An outline is a line drawn outside the element's border.<br>An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out".</p>
+          <p>CSS has the following outline properties:<br>
+          <span class="saf">outline-style<br>
+            outline-color<br>
+            outline-width<br>
+            outline-offset<br>
+            outline</span></p>
+            <p><html>
+              <head>
+              <style>
+              p {outline-color:red;}
+              
+              p.dotted {outline-style: dotted;}
+              p.dashed {outline-style: dashed;}
+              p.solid {outline-style: solid;}
+              p.double {outline-style: double;}
+              p.groove {outline-style: groove;}
+              p.ridge {outline-style: ridge;}
+              p.inset {outline-style: inset;}
+              p.outset {outline-style: outset;}
+              </style>
+              </head>
+              <body>
+              
+              <h2>The outline-style Property</h2>
+              
+              <p class="dotted">A dotted outline</p>
+              <p class="dashed">A dashed outline</p>
+              <p class="solid">A solid outline</p>
+              <p class="double">A double outline</p>
+              <p class="groove">A groove outline. The effect depends on the outline-color value.</p>
+              <p class="ridge">A ridge outline. The effect depends on the outline-color value.</p>
+              <p class="inset">An inset outline. The effect depends on the outline-color value.</p>
+              <p class="outset">An outset outline. The effect depends on the outline-color value.</p>
+              
+              </body>
+              </html></p>
+        </div>
+      </section>
+      <section class="section" id="section">
+        <div class="saff2">
+          <h1>CSS Text</h1>
+          <p>CSS has a lot of properties for formatting text.</p>
+          <h4 class="saff1">Text Color</h4>
+          <p>The <span class="saf">color</span>property is used to set the color of the text. The color is specified by:<br>
+
+            a color name - like "red"<br>
+            a HEX value - like "#ff0000"<br>
+            an RGB value - like "rgb(255,0,0)"
+            <html>
+              <head>
+              <style>
+              body {
+                color: blue;
+              }
+              
+              h1 {
+                color: green;
+              }
+              </style>
+              </head>
+              <body>
+              
+              <h1>This is heading 1</h1>
+              <p>This is an ordinary paragraph. Notice that this text is blue. The default text color for a page is defined in the body selector.</p>
+              <p>Another paragraph.</p>
+              
+              </body>
+              </html>
+              <html>
+                <head>
+                <style>
+                body {
+                  background-color: lightgrey;
+                  color: blue;
+                }
+                
+                h1 {
+                  background-color: black;
+                  color: white;
+                }
+                
+                .a {
+                  background-color: blue;
+                  color: white;
+                }
+                </style>
+                </head>
+                <body>
+                
+                <h1>This is a Heading</h1>
+                <p>This page has a grey background color and a blue text.</p>
+                <div class="a">This is a div.</div>
+                </body>
+                </html></p>
+        </div>
+      </section>
+      <section class="fonts" id="fonts">
+        <div class="saff2">
+          <h1>CSS Fonts</h1>
+          <p>Font Selection is Important<br>
+            Choosing the right font has a huge impact on how the readers experience a website.<br>The right font can create a strong identity for your brand.<br> Using a font that is easy to read is important. The font adds value to your text. It is also important to choose the correct color and text size for the font.</p>
+            <h4 class="saff1">Generic Font Families</h4>
+              <p>In CSS there are five generic font families:<br>
+              Serif fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.<br>
+              Sans-serif fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.<br>
+              Monospace fonts - here all the letters have the same fixed width. They create a mechanical look.<br>
+              Cursive fonts imitate human handwriting.<br>
+              Fantasy fonts are decorative/playful fonts.<br>
+              All the different font names belong to one of the generic font familie</p>
+              <p><html>
+                <head>
+                <style>
+                .p1 {
+                  font-family: "Times New Roman", Times, serif;
+                }
+                
+                .p2 {
+                  font-family: Arial, Helvetica, sans-serif;
+                }
+                
+                .p3 {
+                  font-family: "Lucida Console", "Courier New", monospace;
+                }
+                </style>
+                </head>
+                <body>
+                
+                <h1>CSS font-family</h1>
+                <p class="p1">This is a paragraph, shown in the Times New Roman font.</p>
+                <p class="p2">This is a paragraph, shown in the Arial font.</p>
+                <p class="p3">This is a paragraph, shown in the Lucida Console font.</p>
+                
+                </body>
+                </html></p>
+        </div>
+      </section>
+      <section class="icons" id="icons">
+        <div class="saff2">
+          <h1>CSS Icons</h1>
+          <p>Icons can easily be added to your HTML page, by using an icon library.</p>
+          <div class="b"><p><html>
+            <head>
+            <title>Font Awesome Icons</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+            <!--Get your own code at fontawesome.com-->
+            </head>
+            <body>
+            
+            <h1>Font Awesome icon library</h1>
+            
+            <p>Some Font Awesome icons:</p>
+            <i class="fas fa-cloud"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-car"></i>
+            <i class="fas fa-file"></i>
+            <i class="fas fa-bars"></i>
+            
+            <p>Styled Font Awesome icons (size and color):</p>
+            <i class="fas fa-cloud" style="font-size:24px;"></i>
+            <i class="fas fa-cloud" style="font-size:36px;"></i>
+            <i class="fas fa-cloud" style="font-size:48px;color:red;"></i>
+            <i class="fas fa-cloud" style="font-size:60px;color:lightblue;"></i>
+            
+            </body>
+            </html></p></div>
+        </div>
+      </section>
+      <section class="links" id="links">
+        <div class="saff2">
+          <h1>CSS Links</h1>
+          <p>With CSS, links can be styled in many different ways.<br>Links can be styled with any CSS property (e.g. <span class="saf">color, font-family, background, etc.</span>).</p>
+          <p><html>
+            <head>
+            <style>
+            /* unvisited link */
+            a:link {
+              color: red;
+            }
+            
+            /* visited link */
+            a:visited {
+              color: green;
+            }
+            
+            /* mouse over link */
+            a:hover {
+              color: hotpink;
+            }
+            
+            /* selected link */
+            a:active {
+              color: blue;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h2>Styling a link depending on state</h2>
+            
+            <p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
+            <p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+            <p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+            
+            </body>
+            </html></p>
+        </div>
+      </section>
+      <section class="lists" id="lists">
+        <div class="saff2">
+          <h1>CSS Lists</h1>
+          <h4 class="saff1">HTML Lists and CSS List Properties</h4>
+          <p>In HTML, there are two main types of lists:<br>
+
+            unordered lists (&lt;ul&gt;) - the list items are marked with bullets<br>
+            ordered lists (&lt;ol&gt;) - the list items are marked with numbers or letters</p>
+            <p><html>
+              <head>
+              <style>
+              ul.a {
+                list-style-type: circle;
+              }
+              
+              ul.b {
+                list-style-type: square;
+              }
+              
+              ol.c {
+                list-style-type: upper-roman;
+              }
+              
+              ol.d {
+                list-style-type: lower-alpha;
+              }
+              </style>
+              </head>
+              <body>
+              
+              <h2>The list-style-type Property</h2>
+              
+              <p>Example of unordered lists:</p>
+              <ul class="a">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Coca Cola</li>
+              </ul>
+              
+              <ul class="b">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Coca Cola</li>
+              </ul>
+              
+              <p>Example of ordered lists:</p>
+              <ol class="c">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Coca Cola</li>
+              </ol>
+              
+              <ol class="d">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Coca Cola</li>
+              </ol>
+              
+              </body>
+              </html></p>
+        </div>
+      </section>
+      <section class="tables" id="tables">
+        <div class="saff2">
+          <h1 >CSS Tables</h1>
+          <p>To specify table borders in CSS, use the <span class="saf">border</span> property.<br>The example below specifies a solid border for &lt;table&gt;, &lt;th&gt;, and &lt;td&gt; elements:</p>
+          <p><html>
+            <head>
+            <style>
+            table, th, td {
+              border: 1px solid;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h2>Add a border to a table:</h2>
+            
+            <table>
+              <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+              </tr>
+              <tr>
+                <td>Peter</td>
+                <td>Griffin</td>
+              </tr>
+              <tr>
+                <td>Lois</td>
+                <td>Griffin</td>
+              </tr>
+            </table>
+            
+            </body>
+            </html></p>
+        </div>
+      </section>
+      <section class="forms" id="forms">
+        <div class="saff2">
+          <h1>CSS Forms</h1>
+          <p>The look of an HTML form can be greatly improved with CSS:</p>
+          <p><html>
+            <head>
+            <style>
+            * {
+              box-sizing: border-box;
+            }
+            
+            input[type=text], select, textarea {
+              width: 100%;
+              padding: 5px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              resize: vertical;
+            }
+            
+            label {
+              padding: 12px 12px 12px 0;
+              display: inline-block;
+            }
+            
+            input[type=submit] {
+              background-color: #04AA6D;
+              color: white;
+              padding: 12px 20px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+              float: right;
+            }
+            
+            input[type=submit]:hover {
+              background-color: #45a049;
+            }
+            
+            .c {
+              border-radius: 5px;
+              background-color: #f2f2f2;
+              padding: 5px;
+            }
+            
+            .e-25 {
+              float: left;
+              width: 25%;
+              margin-top: 6px;
+            }
+            
+            .f-75 {
+              float: left;
+              width: 75%;
+              margin-top: 6px;
+            }
+            
+            /* Clear floats after the columns */
+            .d:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            
+            /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+              .col-25, .col-75, input[type=submit] {
+                width: 50%;
+                margin-top: 0;
+              }
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h2>Responsive Form</h2>
+            <p>Resize the browser window to see the effect. When the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other.</p>
+            
+            <div class="c">
+              <form action="/action_page.php">
+              <div class="d">
+                <div class="e-25">
+                  <label for="fname">First Name</label>
+                </div>
+                <div class="f-75">
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+              </div>
+              <div class="d">
+                <div class="e-25">
+                  <label for="lname">Last Name</label>
+                </div>
+                <div class="f-75">
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+              </div>
+              <div class="d">
+                <div class="e-25">
+                  <label for="country">Country</label>
+                </div>
+                <div class="f-75">
+                  <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+                </div>
+              </div>
+              <div class="d">
+                <div class="e-25">
+                  <label for="subject">Subject</label>
+                </div>
+                <div class="f-75">
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+              </div>
+              <br>
+              <div class="d">
+                <input type="submit" value="Submit">
+              </div>
+              </form>
+            </div>
+            
+            </body>
+            </html></p>
+        </div>
+      </section>
+    </body>
+</html>

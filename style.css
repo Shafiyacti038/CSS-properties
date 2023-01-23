@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 20;
+    font-family:'Times New Roman', Times, serif;
+    font-size: large;
+}
+  h1{
+   text-align: center;
+ }
+.saf{
+   color: red;
+}
+.saf1{
+   color: mediumvioletred;
+}
+#saff2 {
+   color: midnightblue;
+   text-align: center;
+ }
+ .saff {
+   color: black;
+   font-family: 'Times New Roman', Times, serif;
+ }
+ .saff1 {
+   color:teal;
+   text-align: center;
+ }
